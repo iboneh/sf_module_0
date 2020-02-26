@@ -23,10 +23,10 @@ def game_core(number):
               break
             else: 
                right = (right + left)//2
-    print (number, count)
+#    print (number, count)
     return(count)
   
-  def score_game(game_core):
+def score_game(game_core):
     count_ls = []
     np.random.seed(1)
     random_array = np.random.randint(1, 101, size=(1000))
@@ -36,4 +36,4 @@ def game_core(number):
     print(f"Ваш алгоритм угадывает число в среднем за {score} попыток")
     return(score)
   
-  score_game(game_core)
+score_game(game_core)
