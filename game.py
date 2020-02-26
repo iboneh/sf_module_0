@@ -17,13 +17,13 @@ def gamecore(number):
     print (number, count)
 
 def score_game(gamecore):
-    count_ls = []
-    np.random.seed(1)
-    random_array = np.random.randint(1, 101, size=(1000))
-    for number in random_array:
-        count_ls.append(gamecore(number))
-    score = int(np.mean(count_ls))
-    print(score)
-    return(score)
+    count_sc = 0
+    while True:
+        count_sc < 1000
+        count_sc = count_sc + 1
+        print (count_sc, number, predict)
+#    score = int(np.mean(count_ls))
+#    print(score)
+#    return(score)
 
 score_game(gamecore)
