@@ -22,12 +22,22 @@ def gamecore(number):
             right = (right + left)/2
     return (count)
 
+    while True:
+        count_l += 1
+        predict_l = np.random.randint(1,100)
+        if number == predict_l: break
+        elif number > predict_l:
+            left = (right + left)/2
+        elif number < predict_l:
+            right = (right + left)/2
+    return (count_l)
+
 def score_game(gamecore):
     count_sc = 0
     while True:
         count_sc < 1000
-        count_sc = count_sc + 1
-        print (count_sc, number, predict)
+        count_sc += 1
+        print (count_sc, number, predict, predict_rnd, predict_l)
 #    score = int(np.mean(count_ls))
 #    print(score)
 #    return(score)
